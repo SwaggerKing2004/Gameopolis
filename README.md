@@ -1,2 +1,2 @@
 # Gameopolis
-stap into world of gaming , GAMEPLAY SAVED!
+stEp into world of gaming , GAMEPLAY SAVED!
