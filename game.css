@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+}
+
+header {
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-content {
+    text-align: center;
+    padding: 50px;
+}
+
+#robot {
+    width: 200px;
+    height: 200px;
+    background-image: url('robot.gif'); /* Animated picture */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    animation: robot-animation 2s linear infinite;
+}
+
+@keyframes robot-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #333;
+    font-family: 'Workbench', sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* Add this CSS to align images side by side */
+.game-preview {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    flex-wrap: wrap;
+}
+
+.game-preview-item {
+    flex: 0 0 30%; /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+
+.game-preview-item img {
+    width: 100%;
+    height: auto;
+}
+.neon-bg {
+    background-color: #00ff00; /* Neon green color */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Neon glow effect */
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-item {
+    margin: 10px;
+}
+#services {
+    background-color: rgba(0, 0, 255, 0.5); /* Transparent blueish color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Blueish glow effect */
+}
+/* Styling for Registration Section */
+#register {
+    background-color: rgba(0, 0, 255, 0.1); /* Transparent blueish background */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#register-form {
+    margin-bottom: 20px;
+}
+
+#google-register {
+    background-color: #dd4b39; /* Google red color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#google-register:hover {
+    background-color: #c53727; /* Darker red on hover */
+}
+

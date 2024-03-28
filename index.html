@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Arcade</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to GAMEOPOLISH</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#photos">Photos</a></li> <!-- Updated anchor tag -->
+                <li><a href="#games">Games</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="content">
+                <h2>About Gameopolish</h2>
+                <p>
+                    Step into our game parlor, where affordable, cheap, and best-in-class entertainment awaits! Experience the new age of gaming with our easy-to-use setup, offering a wide array of exciting games for all to enjoy. Dive into an immersive world of fun without worrying about the cost. Come join us and discover why we're the ultimate destination for budget-friendly gaming thrills.
+                </p>
+                <div id="robot"></div>
+            </div>
+
+            <!-- Animated section -->
+            <div class="animated-section">
+                <h3>Discover Our Latest Games</h3>
+                <div class="game-preview">
+                    <div class="game-preview-item">
+                        <img src="gtav.jpg" alt="Game 1" width="200" height="150">
+                        <h4>GTA V</h4>
+                    </div>
+                    <div class="game-preview-item">
+                        <img src="fifa.jpg" alt="Game 2" width="200" height="150">
+                        <h4>FIFA 23</h4>
+                    </div>
+                    <div class="game-preview-item">
+                        <img src="cod3.jpg" alt="Game 3"  width="200" height="150">
+                        <h4>COD MODERN WARFARE 3</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos">
+            <h2>Photos</h2>
+            <img src="img1.jpeg" alt="Game 2" width="200" height="150">
+            <img src="img2.jpg" alt="Game 2" width="200" height="150">
+            <img src="img3.jpeg" alt="Game 2" width="200" height="150">
+            <img src="img4.jpeg" alt="Game 2" width="200" height="150">
+            <img src="img5.jpeg" alt="Game 2" width="200" height="150">
+            <img src="img6.jpg" alt="Game 2" width="200" height="150">
+            <img src="img7.jpeg" alt="Game 2" width="200" height="150">
+            <img src="background-image.jpg" alt="Game 2" width="200" height="150">
+            <img src="Designer2.jpeg" alt="Game 2" width="200" height="150">
+            <img src="fifa.jpg" alt="Game 2" width="200" height="150">
+        </section>
+        
+        <section id="games">
+            <h2>Games</h2>
+            <div class="game-list">
+                <div class="game-item neon-bg">GTA </div>
+                <div class="game-item neon-bg">FIFA</div>
+                <div class="game-item neon-bg">RED DEAD REDEMPTION2</div>
+                <div class="game-item neon-bg">VALORANT</div>
+                <div class="game-item neon-bg">CALL OF DUTY MW3</div>
+                <div class="game-item neon-bg">GUARDIANS OF GALAXY</div>
+                <div class="game-item neon-bg">COUNTERSTRIKE 2</div>
+                <div class="game-item neon-bg">TOM CLANCY GHOST RECON</div>
+                <div class="game-item neon-bg">HITMAN</div>
+                <div class="game-item neon-bg">EFOOTBALL</div>
+                <div class="game-item neon-bg">SPIDERMAN</div>
+                <div class="game-item neon-bg">ALL GAMES RS 50 PER HALF HOUR </div>
+
+            </div>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <p>
+                Our services include high-quality gaming equipment, diverse game library, comfortable gaming environment, and exciting tournaments and events. Join us to experience the best gaming services!
+            </p>
+            <p>
+                all games will be charged as 30 mins
+            </p>
+            <p>we have three memberships such as platinum,diamond, heroic </p>
+            <p>platinum= 299/month, free 1 hour perday</p>
+            <p>DIAMOND=399/MONTH, FREE 2HOUR perday</p>
+            <P>HEROIC=599/MONTH, FREE 3 HOUR PERDAY,SPEACIAL GAME,COMPETION FREE, </P>
+        </section>
+        <!-- Registration Section -->
+        <section id="login">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+        
+                <button type="submit">Register</button>
+            </form>
+            <button id="google-register">Register with Google</button>
+        </section>
+        
+        <script>
+            document.getElementById('google-register').addEventListener('click', function() {
+                // Perform Google OAuth actions here, such as redirecting to Google authentication page
+                window.location.href = 'https://accounts.google.com/o/oauth2/auth';
+            });
+        </script>
+        
+    </main>
+
+    <footer>
+        <div>Contact Us:</div>
+        <div>Email: example@email.com</div>
+        <div>Phone: 123-456-7890</div>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
